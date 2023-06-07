@@ -425,6 +425,9 @@ html {
 .grid-wrap div .card{
     width: 100%;
 }
+.grid-wrap div .card ul{
+    line-height: 30px;
+}
 .contact{
     padding-left: var(--global-margin);
     padding-right: var(--global-margin);
