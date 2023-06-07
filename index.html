@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Infosign Financial Services</title>
+        <link href="swiper-bundle.min.css" rel="stylesheet" />
+        <link href="stylesheet.css" rel="stylesheet"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script  typs="text/javascript" src="scripts/swiper-bundle.min.js"></script>
+        <script type="text/javascript" src="scripts/reveal.js" ></script>
+
+        <script>
+            $(document).ready(function(){
+                function toggle(){
+                    $('#overlay').toggleClass('open');
+                    $('#toggle').toggleClass('fx');
+                    $('#toggle').text() == "☰" ? $('#toggle').text('✕') : $('#toggle').text('☰');
+                    $('#hide').toggleClass('hide');
+                };
+                $('#toggle').click(function(){
+		            toggle();
+	            });
+                $('#toggle a').click(function(){
+		            toggle();
+	            });
+                
+            });
+        </script>
+    </head>
+    <body>
+
+        <!--Header Begin-->
+        <div class="header" id="#home">
+            <img src="assets/logo.webp" alt="Infosign Financial Services Logo">
+            <span class="body" id="hide">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </span>
+            <div class="wrapper row"  style="--space:16px">
+                <button class="btn no-wrap">Enquire Now</button>
+                <a class="sub-h regular" style="cursor: pointer;" id="toggle">☰</a>
+            </div>
+        </div>
+        <!--Header End-->
+
+        <!--Overlay Menu Begin-->
+        <div class="overlay" id="overlay">
+            <div id="toggle" class="wrapper column" style="--space:20px">
+                <a href="#about" class="sub-h regular">Start A Business</a>
+                <a href="#about" class="sub-h regular">Filing</a>
+                <a href="#home" class="sub-h regular">Home</a>
+                <a href="#about" class="sub-h regular">About</a>
+                <a href="#services" class="sub-h regular">Services</a>
+                <a href="#contact" class="sub-h regular">Contact</a>
+                <div class="iledger">
+                    <img src="assets/iledger.webp"/>
+                    <button class="btn">Start Trial</button>
+                </div>
+            </div>
+        </div>
+        <!--Overlay Menu End-->
+
+        <!--Banner Begin-->
+        <div class="swiper mySwiper" id="home">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide banner"> 
+                    <div class="wrapper column" style="--space:16px">
+                        <p class="sub_h all-cap bold secondary">Audit & Assurance</p>
+                        <p class="h3">Undertake <br>
+                            Internal Auditing of<br>
+                            Books of Accounts<br>
+                            & Transacation
+                        </p>
+                        <button class="btn btn-large">Contact Us</button>
+                    </div>
+                    <img src="assets/banner_1.webp" alt="audit & assurance image"/>
+                </div>
+                <div class="swiper-slide banner"> 
+                    <div class="wrapper column" style="--space:16px">
+                        <p class="sub_h all-cap bold secondary">Acccounting Software Service</p>
+                        <p class="h3">Online Cloud <br>
+                            Based Accounting<br>
+                            Services -<br>
+                            iLedger
+                        </p>
+                        <button class="btn btn-large">Start Trial</button>
+                    </div>
+                    <img src="assets/banner_2.webp" alt="cloud based accounting services"/>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <!--Banner End-->
+
+        <!--Client Begin-->
+        <div class="client light-bg corner-radius reveal">
+            <div class="column">
+                <p class="caption all-cap secondary bold">Our Clients</p>
+                <p class="sub-h regular">Companies we've<br> worked with</p>
+            </div>
+            <div class="marquee">
+                <div class="row">
+                    <img src="assets/clients/1.webp"/>
+                    <img src="assets/clients/2.webp"/>
+                    <img src="assets/clients/3.webp"/>
+                    <img src="assets/clients/4.webp"/>
+                    <img src="assets/clients/5.webp"/>
+                    <img src="assets/clients/6.webp"/>
+                </div>
+            </div>
+        </div>
+        <!--Client End-->
+
+        <!--About Begin-->
+        <div class="about column " id="about">
+            <div class="row reveal" style="justify-content: flex-end;">
+                <img src="assets/about-right.png"/>
+            </div>
+            <div class="wrapper row"> 
+                <div class="wrapper column reveal" style="--space:20px">
+                    <p class="h3 no-wrap">Why Us?</p>
+                    <p class="sub_h all-cap bold secondary">Experience Matters</p>
+                </div>
+                <p class="body">We have more than a decade of experience and expertise in developing and implementing Financial software application. Our software application is used customers ranging from large sized to small and medium sized firms. We have many accounting outsourcing contracts in the areas of Finance, Stock Market, Construction, Trading & Distribution, Shipping etc. We have skilled professionals in the areas of accounting and IT and delivering quality services from multiple processing centers.</p>
+            </div>
+            <div class="row reveal" style="justify-content: flex-start;">
+                <img src="assets/about-left.png"/>
+            </div>
+        </div>
+
+        <div class="row about-list">
+            <img src="assets/vision.webp" class="reveal">
+            <div class="line"></div>
+            <div class="wrapper column reveal" style="--space:16px">
+                <p class="h4">Vision</p>
+                <p class="body">Infosign is vertically focused on the Capital and Commodity market to produce solutions that enable its users to outperform their capabilities. We are a non-tiring research team committed to innovate, explore and implement the best technology to suit the functional requirements of the Capital and Commodity market and make it available to them to earn more as they spend.</p>
+            </div>
+        </div>
+
+        <div class="row about-list">
+            <img src="assets/mission.webp" class="reveal">
+            <div class="line"></div>
+            <div class="wrapper column reveal" style="--space:16px">
+                <p class="h4">Mission</p>
+                <p class="body">To provide innovative, best in class consulting IT, services and support to our customers for optimum utilisation of their resources and to outperform competition.</p>
+            </div>
+        </div>
+
+        <div class="row about-list">
+            <img src="assets/value.webp" class="reveal">
+            <div class="line"></div>
+            <div class="wrapper column reveal" style="--space:16px">
+                <p class="h4">Value</p>
+                <p class="body">Integrity, Excellence, Respect for Individual, Commitment to promises.</p>
+            </div>
+        </div>
+        <!--About End-->
+
+        <!--Services Begin-->
+        <div class="column services wrapper-relative reveal" id="services">
+            <img style="position: absolute;top:0px;left: 0px;width: 30%;z-index: -1;" src="assets/services-bg.png"/>
+            <img style="position: absolute;top:0px;right: 0px;width: 20%;z-index: -1;" src="assets/services-bg-2.png"/>
+
+            <div class="wrapper column reveal" style="--space:8px;">
+                <p class="h3 no-wrap txt-center">Services</p>
+                <p class="sub_h all-cap bold secondary">Providing You with the Best</p>
+            </div>
+            <div class="wrapper column grid-wrap" style="--space:24px">
+                <div class="wrapper row" style="--space:24px">
+                    <div class="card reveal">
+                        <p class="sub-h regular primary-dark">01</p>
+                        <p class="sub-h">Book<br>Keeping</p>
+                        <ul class="body">
+                            <li>Record vendor bills</li>
+                            <li>Record debit card, credit card, bank transactions</li>
+                            <li>Reconcile Bank statements</li>
+                            <li>Monthly/Quaterly/Financial Statement report</li>
+                            <li>Transaction posting and preparation of Trial, PL and Balance sheet.</li>
+                        </ul>
+                    </div>
+
+                    <div class="card reveal">
+                        <p class="sub-h regular primary-dark">02</p>
+                        <p class="sub-h">Payroll Management<br>& ESI/PF Returns</p>
+                        <ul class="body">
+                            <li>Calculate Salary and incentive</li>
+                            <li>Email Salary statements</li>
+                            <li>Disbursement Statement</li>
+                            <li>Calculation of PF/ ESI and Filing of returns</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="wrapper row" style="--space:24px">
+                    <div class="card reveal">
+                        <p class="sub-h regular primary-dark">03</p>
+                        <p class="sub-h">GST/VAT/TDS<br>Returns</p>
+                        <ul class="body">
+                            <li>GST and VAT Registration</li>
+                            <li>Monthly Processing and filing of GST/VAT</li>
+                            <li>TDS Registration and Quaterly Filing</li>
+                    </div>
+
+                    <div class="card reveal">
+                        <p class="sub-h regular primary-dark">04</p>
+                        <p class="sub-h">Accounting<br>Services</p>
+                        <p class="body">Just provide your Invoice, Bills etc and we take care of the rest!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Service End-->
+
+        <!--Contact Begin-->
+        <div class="contact" id="contact">
+            <div class="wrapper column" style="--space:16px;">
+                <div class="row reveal">
+                    <img src="assets/contact.webp"/>
+                    <p class="h3 no-wrap">Contact</p>
+                </div>
+                <p class="body">Infosign Financial Services is perfectly suited to help your organization into a high performance company that streamlines process, reduce cost and ensure standards and quality in your firms’ services/products.</p>
+                <div class="card reveal" style="cursor: pointer;" onclick="window.open('https://goo.gl/maps/HvoP4vAUNa7bZZpE8','_blank');">
+                    <img src="assets/icons/location.png"/>
+                    <p class="body-l">Corporate Office</p>
+                    <p class="body txt-light"> 1st Floor, CyberSquare, Ernakulam North, Cochin, 682018</p>
+
+                </div>
+                <div class="card reveal" style="cursor: pointer;" onclick="window.open('https://goo.gl/maps/QAu1u2UZPhif2pFt8','_blank');">
+                    <img src="assets/icons/location.png"/>
+                    <p class="body-l">Processing Centre</p>
+                    <p class="body txt-light">Finlord Shopping Complex, Mavelikara, 690101</p>
+
+                </div>
+                <div class="card reveal" style="cursor: pointer;" onclick="window.open('mailto:support@Infosign.biz');">
+                    <img src="assets/icons/mail.png"/>
+                    <p class="body-l">support@Infosign.biz</p>
+                </div>
+            </div>
+        </div>
+        <!--Contact End-->
+
+        <!--Footer Begin-->
+        <div class="footer">
+            <div class="row light-bg">
+                <div class=" wrapper column" style="--space:16px">
+                    <img src="assets/logo.webp"/>
+                    <p>Infosign Financial Services Pvt Ltd.<br>
+                    1st Floor, CyberSquare<br>
+                    Ernakulam North, Cochin</p>
+                    <span class="iledger">
+                        <img src="assets/iledger.webp"/>
+                        <button class="btn">Start Trial</button>
+                    </span>
+                </div>
+                <div class="wrapper column" style="--space:28px">
+                    <div class="wrapper row" style="--space:16px">
+                        <a class="body" href="#home">Home</a>
+                        <a class="body" href="#about">About</a>
+                        <a class="body" href="#services">Services</a>
+                        <a class="body" href="#contact">Contact</a>
+                    </div>
+                    <div class="wrapper row" style="--space:16px">
+                        <a class="body">iLedger</a>
+                        <a class="body">Report Transaction</a>
+                    </div>
+                    <div class="wrapper row" style="--space:16px">
+                        <a class="body">Terms</a>
+                        <a class="body">Policy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row txt-white">
+                <p class="body">&copy; 2023 Infosign FInancial Services. All Rights Reserved</p>
+                <img src="assets/icons/facebook.png">
+            </div>
+        </div>
+        <!--Footer End-->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+            // direction:"vertical",
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                bulletActiveClass:'swiper-active',
+   
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: true
+            },
+            });
+        </script>
+
+    </body>
+</html>
