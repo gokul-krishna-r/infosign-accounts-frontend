@@ -92,12 +92,23 @@ html {
 }
 .input,.txt-area{
     border: none;
-    padding-bottom: 12px;
+    padding-bottom: 8px;
     border-bottom: 1px solid var(--txt-l);
     outline: none;
+    background-color: none;
+    color:var(--txt-l);
+    font-size: 14px;
+    transition: border 0.1s ease-in-out;
+}
+.input:focus,.txt-area:active{
+    color: var(--txt-h);
+    border-bottom: 3px solid var(--secondary);
+}
+.chkbox{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 
-    /* text/light */
-    font-size: 12px;
 }
 
 .h1{
@@ -499,5 +510,43 @@ html {
     opacity: 1;
     transform: translate3d(0, 0, 0);
 }
-
-
+.form{
+    margin-top: var(--global-margin);
+    justify-content: center;
+    align-items: center;
+}
+.form div{
+    align-items: center;
+}
+.form form{
+    width: 30%;
+    justify-content: center;
+}
+.form form .input{
+    width: 100%;
+}
+.form form .btn{
+    align-self: center;
+}
+.list-container{
+    margin-top: var(--global-margin);
+    justify-content: center;
+    align-items: center;
+}
+.list-container .grid-wrap{
+    width:50%;
+    align-items: stretch;
+}
+.list-container .grid-wrap p{
+    text-align: center;
+}
+.list-container .grid-wrap .card{
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 36px;
+}
+.list-container .grid-wrap .card a{
+    text-decoration: none;
+    text-align: center;
+}

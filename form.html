@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Infosign Financial Services | Form</title>
+        <link href="stylesheet.css" rel="stylesheet"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script type="text/javascript" src="scripts/reveal.js" ></script>
+
+        <script>
+            $(document).ready(function(){
+                function toggle(){
+                    $('#overlay').toggleClass('open');
+                    $('#toggle').toggleClass('fx');
+                    $('#toggle').text() == "☰" ? $('#toggle').text('✕') : $('#toggle').text('☰');
+                    $('#hide').toggleClass('hide');
+                };
+                $('#toggle').click(function(){
+		            toggle();
+	            });
+                $('#toggle a').click(function(){
+		            toggle();
+	            });
+                
+            });
+        </script>
+    </head>
+    <body>
+
+        <!--Header Begin-->
+        <div class="header" id="#home">
+            <img src="assets/logo.webp" alt="Infosign Financial Services Logo">
+            <span class="body" id="hide">
+                <a href="index.html#about">About</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#contact">Contact</a>
+            </span>
+            <div class="wrapper row"  style="--space:16px">
+                <button class="btn no-wrap">Enquire Now</button>
+                <a class="sub-h regular" style="cursor: pointer;" id="toggle">☰</a>
+            </div>
+        </div>
+        <!--Header End-->
+
+        <!--Overlay Menu Begin-->
+        <div class="overlay" id="overlay">
+            <div id="toggle" class="wrapper column" style="--space:20px">
+                <a href="start-business.html" class="sub-h regular">Start A Business</a>
+                <a href="filing.html" class="sub-h regular">Filing</a>
+                <a href="index.html#home" class="sub-h regular">Home</a>
+                <a href="index.html#about" class="sub-h regular">About</a>
+                <a href="index.html#services" class="sub-h regular">Services</a>
+                <a href="index.html#contact" class="sub-h regular">Contact</a>
+                <div class="iledger">
+                    <img src="assets/iledger.webp"/>
+                    <button class="btn">Start Trial</button>
+                </div>
+            </div>
+        </div>
+        <!--Overlay Menu End-->
+         
+        <!--Form Begin-->
+        <div class="wrapper column form reveal" style="--space:40px">
+            <div class="wrapper column reveal" style="--space:8px;">
+                <p class="h3 no-wrap txt-center">Proprietorship</p>
+                <p class="sub_h all-cap bold secondary">Let's start a Proprietorship</p>
+            </div>
+            <form class="wrapper column reveal" style="--space:36px">
+                <input class="input" type="text" placeholder="Tell us your name"/>
+                <div class="wrapper row" style="--space:16px">
+                    <input class="input" type="text" placeholder="Enter your Email"/>
+                    <input class="input" type="text" placeholder="Enter your mobile number"/>
+                </div>
+                <div class="wrapper row" style="--space:16px">
+                    <input class="input" type="text" placeholder="Enter your city"/>
+                    <input class="input" type="text" placeholder="Enter your postal code"/>
+                </div>
+                <textarea class="txt-area" type="text" placeholder="Tell us about your enquiry"></textarea>
+                <p class="sub-h bold">Firm Information</p>
+                <input class="input" type="text" placeholder="Enter your firm name"/>
+                <div class="wrapper row" style="--space:16px">
+                    <select title="package" class="input">
+                        <option value="" selected>Select your package</option>
+                        <option value="basic">Basic</option>
+                        <option value="standard">Standard</option>
+                        <option value="premium">Premium</option>
+                    </select>
+                    <select title="state" class="input">
+                        <option value="01">ANDAMAN AND NICOBAR ISLANDS</option>
+                        <option value="02">ANDHRA PRADESH</option>
+                        <option value="03">ARUNACHAL PRADESH</option>
+                        <option value="04">ASSAM</option>
+                        <option value="05">BIHAR</option>
+                        <option value="06">CHANDIGARH</option>
+                        <option value="07">DADRA &amp; NAGARHAVELI</option>
+                        <option value="08">DAMAN &amp; DIU</option>
+                        <option value="09">DELHI</option>
+                        <option value="10">GOA</option>
+                        <option value="11">GUJARAT</option>
+                        <option value="12">HARYANA</option>
+                        <option value="13">HIMACHAL PRADESH</option>
+                        <option value="14">JAMMU &amp; KASHMIR</option>
+                        <option value="15">KARNATAKA</option>
+                        <option selected="selected" value="16">KERALA</option>
+                        <option value="17">LAKHSWADEEP</option>
+                        <option value="18">MADHYA PRADESH</option>
+                        <option value="19">MAHARASHTRA</option>
+                        <option value="20">MANIPUR</option>
+                        <option value="21">MEGHALAYA</option>
+                        <option value="22">MIZORAM</option>
+                        <option value="23">NAGALAND</option>
+                        <option value="24">ORISSA</option>
+                        <option value="25">PONDICHERRY</option>
+                        <option value="26">PUNJAB</option>
+                        <option value="27">RAJASTHAN</option>
+                        <option value="28">SIKKIM</option>
+                        <option value="29">TAMILNADU</option>
+                        <option value="30">TRIPURA</option>
+                        <option value="31">UTTAR PRADESH</option>
+                        <option value="32">WEST BANGAL</option>
+                        <option value="33">CHHATISHGARH</option>
+                        <option value="34">UTTARANCHAL</option>
+                        <option value="35">JHARKHAND</option>
+                        <option value="36">TELANGANA</option>
+                        <option value="99">NRI(Foreign Address)</option>
+                        <option value="88">DEFENSE</option>
+                    </select>
+                </div>
+                <div class="wrapper chkbox" style="--space:8px">
+                    <input type="checkbox">
+                    <label>Are you an existing customer?</label>
+                </div>
+                <input class="btn" type="submit" value="Submit"/>
+            </form>
+        </div>
+        <!--Form End-->
+
+        <!--Footer Begin-->
+        <div class="footer">
+            <div class="row light-bg">
+                <div class=" wrapper column" style="--space:16px">
+                    <img src="assets/logo.webp"/>
+                    <p>Infosign Financial Services Pvt Ltd.<br>
+                    1st Floor, CyberSquare<br>
+                    Ernakulam North, Cochin</p>
+                    <span class="iledger">
+                        <img src="assets/iledger.webp"/>
+                        <button class="btn">Start Trial</button>
+                    </span>
+                </div>
+                <div class="wrapper column" style="--space:28px">
+                    <div class="wrapper row" style="--space:16px">
+                        <a class="body" href="index.html#home">Home</a>
+                        <a class="body" href="index.html#about">About</a>
+                        <a class="body" href="index.html#services">Services</a>
+                        <a class="body" href="index.html#contact">Contact</a>
+                    </div>
+                    <div class="wrapper row" style="--space:16px">
+                        <a class="body">iLedger</a>
+                        <a class="body">Report Transaction</a>
+                    </div>
+                    <div class="wrapper row" style="--space:16px">
+                        <a class="body">Terms</a>
+                        <a class="body">Policy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row txt-white">
+                <p class="body">&copy; 2023 Infosign FInancial Services. All Rights Reserved</p>
+                <img src="assets/icons/facebook.png">
+            </div>
+        </div>
+        <!--Footer End-->
+    </body>
+</html>

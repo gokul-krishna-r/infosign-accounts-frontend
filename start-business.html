@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Infosign Financial Services | Form</title>
+        <link href="stylesheet.css" rel="stylesheet"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script type="text/javascript" src="scripts/reveal.js" ></script>
+
+        <script>
+            $(document).ready(function(){
+                function toggle(){
+                    $('#overlay').toggleClass('open');
+                    $('#toggle').toggleClass('fx');
+                    $('#toggle').text() == "☰" ? $('#toggle').text('✕') : $('#toggle').text('☰');
+                    $('#hide').toggleClass('hide');
+                };
+                $('#toggle').click(function(){
+		            toggle();
+	            });
+                $('#toggle a').click(function(){
+		            toggle();
+	            });
+                
+            });
+        </script>
+    </head>
+    <body>
+
+        <!--Header Begin-->
+        <div class="header" id="#home">
+            <img src="assets/logo.webp" alt="Infosign Financial Services Logo">
+            <span class="body" id="hide">
+                <a href="index.html#about">About</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#contact">Contact</a>
+            </span>
+            <div class="wrapper row"  style="--space:16px">
+                <button class="btn no-wrap">Enquire Now</button>
+                <a class="sub-h regular" style="cursor: pointer;" id="toggle">☰</a>
+            </div>
+        </div>
+        <!--Header End-->
+
+        <!--Overlay Menu Begin-->
+        <div class="overlay" id="overlay">
+            <div id="toggle" class="wrapper column" style="--space:20px">
+                <a href="index.html" class="sub-h regular">Start A Business</a>
+                <a href="index.html" class="sub-h regular">Filing</a>
+                <a href="index.html#home" class="sub-h regular">Home</a>
+                <a href="index.html#about" class="sub-h regular">About</a>
+                <a href="index.html#services" class="sub-h regular">Services</a>
+                <a href="index.html#contact" class="sub-h regular">Contact</a>
+                <div class="iledger">
+                    <img src="assets/iledger.webp"/>
+                    <button class="btn">Start Trial</button>
+                </div>
+            </div>
+        </div>
+        <!--Overlay Menu End-->
+         
+        <!--Business Begin-->
+        <div class="wrapper column reveal list-container" style="--space:24px">
+            <img style="position: absolute;top:0px;left: 0px;width: 30%;z-index: -1;" src="assets/services-bg.png"/>
+            <img style="position: absolute;top:0px;right: 0px;width: 20%;z-index: -1;" src="assets/services-bg-2.png"/>
+            <div class="wrapper column reveal" style="--space:8px;">
+                <p class="h3 no-wrap txt-center">Start a Business</p>
+            </div>
+           <div class="wrapper column  grid-wrap" style="--space:24px">
+                <p class="sub-h reveal">India</p>
+                <div class="wrapper row reveal" style="--space:24px">
+                    <div class="card">
+                        <a href="#">Proprietorship</a>
+                    </div>
+                    <div class="card">
+                        <a href="#">Partnership</a>
+                    </div>
+                    <div class="card">
+                        <a href="#">Limited Liabilty Partnership</a>
+                    </div>
+                </div>
+                <div class="wrapper row reveal" style="--space:24px">
+                    <div class="card">
+                        <a href="#">Private Limited Company</a>
+                    </div>
+                    <div class="card">
+                        <a href="#">Public Limited Company</a>
+                    </div>
+                    <div class="card">
+                        <a href="#">Public Limited Company</a>
+                    </div>
+                </div>
+                <div class="wrapper row reveal" style="--space:24px">
+                    <div class="card">
+                        <a href="#">Others</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper column  grid-wrap" style="--space:24px">
+                <p class="sub-h reveal">Registration</p>
+                <div class="wrapper row reveal" style="--space:24px">
+                    <div class="card">
+                        <a href="#">GST Registration</a>
+                    </div>
+                    <div class="card">
+                        <a href="#">VAT Registration</a>
+                    </div>
+                    <div class="card">
+                        <a href="#">ESI Registration</a>
+                    </div>
+                </div>
+                <div class="wrapper row reveal" style="--space:24px">
+                    <div class="card">
+                        <a href="#">TAN Registration</a>
+                    </div>
+                    <div class="card">
+                        <a href="#">TIN Registration</a>
+                    </div>
+                    <div class="card">
+                        <a href="#">Export Credit</a>
+                    </div>
+                </div>
+                <div class="wrapper row reveal" style="--space:24px">
+                    <div class="card">
+                        <a href="#">PAN</a>
+                    </div>
+                    <div class="card">
+                        <a href="#">Digital Signature</a>
+                    </div>
+                    <div class="card">
+                        <a href="#">Others</a>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper column  grid-wrap" style="--space:24px">
+                <p class="sub-h reveal">Audit</p>
+                <div class="wrapper row reveal" style="--space:24px">
+                    <div class="card">
+                        <a href="#">Audit</a>
+                    </div>
+                    <div class="card">
+                        <a href="#">Financial Audit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Business End-->
+
+        <!--Footer Begin-->
+        <div class="footer">
+            <div class="row light-bg">
+                <div class=" wrapper column" style="--space:16px">
+                    <img src="assets/logo.webp"/>
+                    <p>Infosign Financial Services Pvt Ltd.<br>
+                    1st Floor, CyberSquare<br>
+                    Ernakulam North, Cochin</p>
+                    <span class="iledger">
+                        <img src="assets/iledger.webp"/>
+                        <button class="btn">Start Trial</button>
+                    </span>
+                </div>
+                <div class="wrapper column" style="--space:28px">
+                    <div class="wrapper row" style="--space:16px">
+                        <a class="body" href="index.html#home">Home</a>
+                        <a class="body" href="index.html#about">About</a>
+                        <a class="body" href="index.html#services">Services</a>
+                        <a class="body" href="index.html#contact">Contact</a>
+                    </div>
+                    <div class="wrapper row" style="--space:16px">
+                        <a class="body">iLedger</a>
+                        <a class="body">Report Transaction</a>
+                    </div>
+                    <div class="wrapper row" style="--space:16px">
+                        <a class="body">Terms</a>
+                        <a class="body">Policy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row txt-white">
+                <p class="body">&copy; 2023 Infosign FInancial Services. All Rights Reserved</p>
+                <img src="assets/icons/facebook.png">
+            </div>
+        </div>
+        <!--Footer End-->
+    </body>
+</html>
