@@ -11,7 +11,7 @@
                 function toggle(){
                     $('#overlay').toggleClass('open');
                     $('#toggle').toggleClass('fx');
-                    $('#toggle').text() == "☰" ? $('#toggle').text('✕') : $('#toggle').text('☰');
+                    $('#toggle').attr('src') == "assets/icons/hamburger.png" ? $('#toggle').attr('src','assets/icons/close.png') : $('#toggle').attr('src','assets/icons/hamburger.png');
                     $('#hide').toggleClass('hide');
                 };
                 $('#toggle').click(function(){
@@ -30,13 +30,14 @@
         <div class="header" id="#home">
             <img src="assets/logo.webp" alt="Infosign Financial Services Logo">
             <span class="body" id="hide">
+                <a href="index.html#home">Home</a>
                 <a href="index.html#about">About</a>
                 <a href="index.html#services">Services</a>
                 <a href="index.html#contact">Contact</a>
             </span>
             <div class="wrapper row"  style="--space:16px">
-                <button class="btn no-wrap">Enquire Now</button>
-                <a class="sub-h regular" style="cursor: pointer;" id="toggle">☰</a>
+                <a class="btn no-wrap" href="request-demo.html" target="_blank">Enquire Now</a>
+                <img class="sub-h regular" src="assets/icons/hamburger.png" style="cursor: pointer;" id="toggle"/>
             </div>
         </div>
         <!--Header End-->
@@ -52,7 +53,7 @@
                 <a href="index.html#contact" class="sub-h regular">Contact</a>
                 <div class="iledger">
                     <img src="assets/iledger.webp"/>
-                    <button class="btn">Start Trial</button>
+                    <a class="btn" href="http://iledgercloud.biz/iLedgerFS/home.aspx">Start Trial</a>
                 </div>
             </div>
         </div>
@@ -156,8 +157,7 @@
                     Ernakulam North, Cochin</p>
                     <span class="iledger">
                         <img src="assets/iledger.webp"/>
-                        <button class="btn">Start Trial</button>
-                    </span>
+                        <a class="btn" href="http://iledgercloud.biz/iLedgerFS/home.aspx" >Start Trial</a>                    </span>
                 </div>
                 <div class="wrapper column" style="--space:28px">
                     <div class="wrapper row" style="--space:16px">
@@ -167,8 +167,8 @@
                         <a class="body" href="index.html#contact">Contact</a>
                     </div>
                     <div class="wrapper row" style="--space:16px">
-                        <a class="body">iLedger</a>
-                        <a class="body">Report Transaction</a>
+                        <a class="body" href="http://iledgercloud.biz/iLedgerFS/home.aspx">iLedger</a>
+                        <a class="body" href="http://iledgercloud.biz/iLedgerFS/wfmtransreportLogin.aspx">Report Transaction</a>
                     </div>
                     <div class="wrapper row" style="--space:16px">
                         <a class="body">Terms</a>
@@ -178,9 +178,30 @@
             </div>
             <div class="row txt-white">
                 <p class="body">&copy; 2023 Infosign FInancial Services. All Rights Reserved</p>
-                <img src="assets/icons/facebook.png">
+                <!-- <img src="assets/icons/facebook.png"> -->
             </div>
         </div>
         <!--Footer End-->
+        <script type="text/javascript">
+
+            var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+            
+            (function(){
+            
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            
+            s1.async=true;
+            
+            s1.src='https://embed.tawk.to/6403967e31ebfa0fe7f0af2c/1gqn07nsm';
+            
+            s1.charset='UTF-8';
+            
+            s1.setAttribute('crossorigin','*');
+            
+            s0.parentNode.insertBefore(s1,s0);
+            
+            })();
+            
+            </script>
     </body>
 </html>

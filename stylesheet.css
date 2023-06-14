@@ -70,6 +70,7 @@ html {
     font-size: 12px;
     line-height: 20px;
     letter-spacing: 0.02em;
+    text-decoration: none;
     text-transform: uppercase;
     transition:all .3s;
     cursor:pointer;
@@ -264,7 +265,13 @@ html {
 }
 .header .row a:hover{
     color:var(--primary);
-    transform: scale(1.4);
+    transform: scale(1.2);
+}
+.header .row img{
+    width: 20px;
+    transition: .4s;
+    transform-origin: center;
+    object-fit: contain;
 }
 .overlay{
     width: 100%;
@@ -354,13 +361,16 @@ html {
     display: flex;
     justify-content: space-between;
     animation: marquee 20s linear infinite forwards;
+    flex:1
 
 }
 .marquee .row img{
+    width: 12%;
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
     object-fit: contain;
-    width:15%;
+
+   
 }
 /* .marquee:before,
 .marquee:after {
@@ -472,7 +482,7 @@ html {
     text-decoration: none;
 }
 .footer > .row:nth-child(2){
-    justify-content: space-between;
+    justify-content:center;
     padding: 20px var(--global-margin) 20px var(--global-margin);
 }
 .footer > .row:nth-child(2) img{
